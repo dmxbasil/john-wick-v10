@@ -424,13 +424,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('• ᴜᴩᴅᴀᴛᴇꜱ •', url='https://t.me/+qVX6Tbg5xWs1YmM1'),
-            InlineKeyboardButton('• ɢʀᴏᴜᴩ •', url='https://t.me/+gkNIhOs1MUY2MTJl')
+            InlineKeyboardButton('ɢʀᴏᴜᴩ 👥', url='https://t.me/zb_movies'),
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ 📮', url='https://t.me/zb_movies_official')
         ], [
-            InlineKeyboardButton('• ʜᴇʟᴩ •', callback_data='help'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
+            InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('⚙️ ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -438,16 +438,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('••')
+        await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('• ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ •', callback_data='manuelfilter'),
-            InlineKeyboardButton('• ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ •', callback_data='autofilter')
+            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ғɪʟᴛᴇʀ 🔧', callback_data='manuelfilter'),
+            InlineKeyboardButton('ᴀᴜᴛᴏ ғɪʟᴛᴇʀ 🛠', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('• ᴄᴏɴɴᴇᴄᴛɪᴏɴ •', callback_data='coct'),
-            InlineKeyboardButton('• ᴇxᴛʀᴀ ᴍᴏᴅꜱ •', callback_data='extra')
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ 🔗', callback_data='coct'),
+            InlineKeyboardButton('ᴇxᴛʀᴀ ᴍᴏᴅs 🎛', callback_data='extra')
         ], [
-            InlineKeyboardButton('• ʜᴏᴍᴇ •', callback_data='start'),
+            InlineKeyboardButton('ʜᴏᴍᴇ 🔓', callback_data='start'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -457,7 +457,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('• ʜᴏᴍᴇ •', callback_data='start'),
+            InlineKeyboardButton('ʜᴏᴍᴇ 🔓', callback_data='start'),
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -627,7 +627,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('••')
+    await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -723,7 +723,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"ʜᴇʀᴇ ɪꜱ ᴡʜᴀᴛ ɪ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ qᴜᴇʀʏ <code>{search}</code>"
+        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n\n😌 ɪꜰ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇɴ ʟᴇᴀᴠᴇ ᴀ ᴍᴇssᴀɢᴇ ʙᴇʟᴏᴡ 😌 \n\nᴇxᴀᴍᴘʟᴇ : \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @admin"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
